@@ -1,0 +1,88 @@
+<!DOCTYPE web-app PUBLIC  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<servlet>
+		<servlet-name>ApplicationEntry</servlet-name>
+		<servlet-class>admin.customer.guanwangbao.AdminEntry</servlet-class>
+		<load-on-startup>1</load-on-startup> 
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DOWNLOADENTRY</servlet-name>
+		<servlet-class>admin.customer.guanwangbao.DownloadEntry</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>VerifyImageGenerate</servlet-name>
+		<servlet-class>admin.customer.guanwangbao.ImageGenerator</servlet-class>
+	</servlet>
+	
+	<!-- batchUploadImage -->  
+	<servlet>
+		<servlet-name>BatchUploadImageSeverlet</servlet-name>
+		<servlet-class>
+			admin.customer.guanwangbao.BatchUploadImageSeverlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BatchUploadImageSeverlet</servlet-name>
+		<url-pattern>/batchUploadImageUrl</url-pattern>
+	</servlet-mapping>
+	<!-- batchUploadImage -->
+	
+	
+	<!-- ueditor -->  
+	<servlet>
+		<servlet-name>Ueditor</servlet-name>
+		<servlet-class>
+			admin.customer.guanwangbao.ueditor.UploaderSeverlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ueditor</servlet-name>
+		<url-pattern>/ueditor/upload/*</url-pattern>
+	</servlet-mapping>
+	<!-- ueditor -->
+	
+	<!-- flashChar -->
+	<servlet-mapping>
+		<servlet-name>DOWNLOADENTRY</servlet-name>
+		<url-pattern>/download</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>VerifyImageGenerate</servlet-name>
+		<url-pattern>/randomNumberImage</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ApplicationEntry</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ApplicationEntry</servlet-name>
+		<url-pattern>/ajax</url-pattern>
+	</servlet-mapping>
+	
+	<security-constraint>  
+		<web-resource-collection>  
+			<url-pattern>*.jsp</url-pattern>
+		</web-resource-collection>
+		<auth-constraint/>  
+	</security-constraint>
+	
+	<!-- 去掉首尾空白行 -->
+	<jsp-config>  
+		<jsp-property-group>  
+		<url-pattern>*.jsp</url-pattern>  
+		<trim-directive-whitespaces>true</trim-directive-whitespaces>  
+		</jsp-property-group>  
+	</jsp-config>
+	
+	<welcome-file-list>
+		<welcome-file>admin</welcome-file>
+	</welcome-file-list>
+	<session-config>
+        <session-timeout>120</session-timeout>
+	</session-config>	
+</web-app>

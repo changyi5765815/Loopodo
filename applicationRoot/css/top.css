@@ -1,0 +1,122 @@
+html {
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100%;
+}
+
+* {
+	margin: 0pt;
+	padding: 0pt;
+}
+
+body {
+	height: 100%;
+	font-size: 12px;
+	color: rgb(51, 51, 51);
+	line-height: 18px;
+	text-align: left;
+	background: none repeat scroll 0% 0% rgb(242, 249, 255);
+}
+
+a {
+	color: rgb(0, 100, 180);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input,select,textarea {
+	font: 12px/ 18px 'ËÎÌå';
+	vertical-align: middle;
+	border: 1px solid rgb(127, 157, 185);
+	color: rgb(51, 51, 51);
+}
+
+input {
+	height: 18px;
+	padding: 0pt 2px;
+}
+
+.red,.red a {
+	color: rgb(255, 0, 0);
+}
+
+#head {
+	height: 52px;
+	background: url('/images/bk_header.png') repeat-x transparent;
+	border-bottom: 1px solid rgb(94, 171, 229);
+}
+
+#head h1 {
+	height: 52px;
+	width: 305px;
+	font: bold 24px/ 52px "ºÚÌå";
+	color: rgb(255, 255, 255);
+	float: left;
+	padding-left: 5px;
+	line-height:52px;
+}
+
+#head h1 a {
+	color: rgb(255, 255, 255);
+}
+
+#head .tel {
+	height: 25px;
+	color: rgb(255, 255, 255);
+	font: 12px/ 25px "arial";
+	text-align: right;
+	padding-right: 10px;
+	overflow: hidden;
+}
+
+#head .tel .icon {
+	padding-left: 23px;
+	background: url('/images/icon_head.gif') no-repeat scroll 0pt -389px transparent
+		;
+}
+
+#head .toptip {
+	height: 27px;
+	line-height: 29px;
+	overflow: hidden;
+	padding-left: 6px;
+	background: url('/images/corner_left.gif') no-repeat scroll 0% 0% transparent;
+	float: right;
+}
+
+#head p {
+	background: url('/images/bk_body.gif') repeat-x scroll 0pt -80px transparent;
+	padding-left: 5px;
+}
+
+.icon_hello,.icon_time,.icon_help,.icon_exit,.icon_home,.icon_advise {
+	background: url('/images/icon_head2.gif') no-repeat scroll 0pt 5px transparent;
+	padding: 0pt 10px 0pt 20px;
+	display: inline-block;
+}
+
+.icon_time {
+	background-position: 0pt -25px;
+}
+
+.icon_help {
+	background-position: 0pt -55px;
+}
+
+.icon_exit {
+	background-position: 0pt -85px;
+}
+
+.icon_home {
+	background-position: 0pt -416px;
+	color: rgb(255, 255, 255);
+	padding-right: 12px;
+}
+
+.icon_advise {
+	background-position: 0pt -446px;
+	color: rgb(255, 255, 255);
+}

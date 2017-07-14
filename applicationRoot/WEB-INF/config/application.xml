@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+	<modules>
+		<module name="adminLogin" output="adminLogin.jsp" />
+		<module name="password" output="password.jsp" />
+		<module name="index" output="index.jsp" />
+		<module name="ajax" output="ajax.jsp" />
+		<module name="recache" output="recache.jsp" />
+		<module name="top" output="top.jsp" />
+		<module name="left" output="left.jsp" />
+		<module name="right" output="right.jsp" />
+		<module name="middle" output="middle.jsp" />
+		<module name="banner" output="banner.jsp" />
+		<module name="systemRole" output="systemRole.jsp" />
+		<module name="systemUser" output="systemUser.jsp" />
+		<module name="city" output="city.jsp" />
+		<module name="deliveryType" output="deliveryType.jsp" />
+		<module name="payType" output="payType.jsp" />
+		<module name="type" output="type.jsp" />
+		<module name="properties" output="properties.jsp" />
+		<module name="sysConfig" output="sysConfig.jsp" />
+		<module name="properties" output="properties.jsp" />
+		<module name="skuProp" output="skuProp.jsp" />
+		<module name="user" output="user.jsp" />
+		<module name="userDiscountRate" output="userDiscountRate.jsp" />
+		<module name="product" output="product.jsp" />
+		<module name="collection" output="collection.jsp" />
+		<module name="brand" output="brand.jsp" />
+		<module name="brandType" output="brandType.jsp" />
+		<module name="supplier" output="supplier.jsp" />
+		<module name="order" output="order.jsp" />
+		<module name="transaction" output="transaction.jsp" />
+		<module name="refund" output="refund.jsp" />
+		<module name="returnGoods" output="returnGoods.jsp" />
+		<module name="helpPage" output="helpPage.jsp" />
+		<module name="promotionActive" output="promotionActive.jsp" />
+		<module name="card" output="card.jsp" />
+		<module name="common" output="common.jsp" />
+		<module name="groupBuy" output="groupBuy.jsp" />
+		<module name="singlePage" output="singlePage.jsp" />
+		<module name="info" output="info.jsp" />
+		<module name="infoCollection" output="infoCollection.jsp" />
+		<module name="infoType" output="infoType.jsp" />
+		<module name="stockManager" output="stockManager.jsp" />
+		<module name="stockOutBill" output="stockOutBill.jsp" />
+		<module name="stockInBill" output="stockInBill.jsp" />
+		<module name="stockOutBill" output="stockOutBill.jsp" />
+		<module name="comment" output="comment.jsp" />
+		<module name="consultation" output="consultation.jsp" />
+		<module name="printOrder" output="printOrder.jsp" />
+		<module name="printDelivery" output="printDelivery.jsp" />
+		<module name="weixinConfig" output="weixinConfig.jsp" />
+		<module name="weixinMenu" output="weixinMenu.jsp" />
+		<module name="reloadCache" output="right.jsp" />
+		<module name="deliveryFee" output="deliveryFee.jsp" />
+		<module name="appInfo" output="appInfo.jsp" />
+		<module name="helpPageType" output="helpPageType.jsp" />
+		<module name="userRegisterReport" output="userRegisterReport.jsp" />
+		<module name="orderReport" output="orderReport.jsp" />
+		<module name="userStore" output="userStore.jsp" />
+		<module name="supplierCash" output="supplierCash.jsp" />
+		<module name="keyword" output="keyword.jsp" />
+		<module name="productLevel" output="productLevel.jsp" />
+		<module name="floor" output="floor.jsp" />
+		<module name="purchaseManager" output="purchaseManager.jsp" />
+		<module name="excellentSupplier" output="excellentSupplier.jsp" />
+		<module name="groupCompany" output="groupCompany.jsp" />
+		<module name="famousCompany" output="famousCompany.jsp" />
+		<module name="questionFeedBack" output="questionFeedBack.jsp" />
+		<module name="infoComment" output="infoComment.jsp" />
+		<module name="systemUserLog" output="systemUserLog.jsp" />
+		<module name="supplierTheme" output="supplierTheme.jsp" />
+		<module name="shopUser" output="shopUser.jsp" />
+		<module name="friendshipLink" output="friendshipLink.jsp" />
+		<module name="companyIndustry" output="companyIndustry.jsp" />
+		<module name="supplierLevel" output="supplierLevel.jsp" />
+		<module name="shopReputation" output="shopReputation.jsp" />
+		<module name="supplierAmountReport" output="supplierAmountReport.jsp" />
+	</modules> 
+	
+	<queryDataLists>
+	
+		<queryDataList name="properties" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="name" operator="like" expression="%$q_name$%" />
+			<condition name="bigTypeID" operator="=" expression="$q_bigTypeID$" />
+			<condition name="smallTypeID" operator="=" expression="$q_smallTypeID$" />
+			<condition name="tinyTypeID" operator="=" expression="$q_tinyTypeID$" />
+			<condition name="salePropFlag" operator="=" expression="$q_salePropFlag$" />
+			<condition name="searchPropFlag" operator="=" expression="$q_searchPropFlag$" />
+			<condition name="propTypeID" operator="=" expression="$q_propTypeID$" />
+		</queryDataList>
+		
+		<queryDataList name="skuProp" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="name" operator="like" expression="%$q_name$%" />
+		</queryDataList>
+		
+		<queryDataList name="user" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="userID" operator="=" expression="$q_userID$" />
+			<condition name="userTypeID" operator="=" expression="$q_userTypeID$" />
+			<condition name="name" operator="like" expression="%$q_name$%" />
+			<condition name="companyName" operator="like" expression="%$q_companyName$%" />
+			<condition name="companyName" operator="like" expression="%$q_companyName2$%" />
+			<condition name="mobile" operator="like" expression="%$q_mobile$%" />
+			<condition name="email" operator="like" expression="%$q_email$%" />
+			<condition name="userName" operator="like" expression="%$q_userName$%" />
+			<condition name="validFlag" operator="=" expression="$q_validFlag$" />
+			<condition name="famousFlag" operator="=" expression="$q_famousFlag$" />
+			<condition name="groupFlag" operator="=" expression="$q_groupFlag$" />
+			<condition name="deletedFlag" operator="=" expression="$q_deletedFlag$" />
+		</queryDataList>
+		
+		<queryDataList name="product_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="deletedFlag" operator="=" expression="$q_deletedFlag$" />
+			<condition name="productID" operator="=" expression="$q_productID$" />
+			<condition name="bigTypeID" operator="=" expression="$q_bigTypeID$" />
+			<condition name="smallTypeID" operator="=" expression="$q_smallTypeID$" />
+			<condition name="tinyTypeID" operator="=" expression="$q_tinyTypeID$" />
+			<condition name="name" operator="like" expression="%$q_name$%" />
+			<condition name="supplierName" operator="like" expression="%$q_supplierName$%" />
+			<condition name="productCode" operator="like" expression="%$q_productCode$%" />
+			<condition name="tag" operator="=" expression="$q_tag$" />
+			<condition name="validFlag" operator="=" expression="$q_validFlag$" />
+			<condition name="auditStatus" operator="=" expression="$q_auditStatus$" />
+		</queryDataList>
+		
+		<queryDataList name="infoComment_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="nick" operator="=" expression="$q_nick$" />
+			<condition name="infoCommentID" operator="=" expression="$q_infoCommentID$" />
+			<condition name="title" operator="like" expression="%$q_title$%" />
+			<condition name="deletedFlag" operator="=" expression="$deletedFlag$" />
+		</queryDataList>
+		
+		<queryDataList name="shopOrder_V" conditionRelation="and" pageNumber="10" isQueryWithNoCondition="true">
+			<condition name="userID" operator="=" expression="$q_userID$" />
+			<condition name="shopOrderID" operator="like" expression="%$q_shopOrderID$%" />
+			<condition name="mobile" operator="like" expression="%$q_mobile$%" />
+			<condition name="shopID" operator="=" expression="$q_shopID$" />
+			<condition name="orderTime" operator="&gt;=" expression="$q_fromOrderTime$" />
+			<condition name="orderTime" operator="&lt;=" expression="$q_toOrderTime$" />
+			<condition name="shouHuoRen" operator="like" expression="%$q_shouHuoRen$%" />
+			<condition name="status" operator="=" expression="$q_statusID$" />
+			<condition name="exceptionFlag" operator="=" expression="$q_exceptionFlag$" />
+			<condition name="refundStatus" operator="=" expression="$q_refundStatus$" />
+			<condition name="deliveryTypeID" operator="=" expression="$q_deliveryTypeID$" />
+			<condition name="returnGoodsStatus" operator="=" expression="$q_returnGoodsStatus$" />
+			<condition name="supplierID" operator="=" expression="$q_supplierID$" />
+			<condition name="supplierName" operator="like" expression="%$q_supplierName$%" />
+		</queryDataList>
+		
+		<queryDataList name="transaction" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="status" operator="=" expression="$q_status$" />
+			<condition name="transactionID" operator="=" expression="$q_transactionID$" />
+			<condition name="transactionTypeID" operator="=" expression="$q_transactionTypeID$" />
+			<condition name="userID" operator="=" expression="$q_userID$" />
+			<condition name="payTime" operator="&gt;=" expression="$q_fromPayTime$" />
+			<condition name="payTime" operator="&lt;=" expression="$q_toPayTime$" />
+			<condition name="payTypeID" operator="=" expression="$q_payTypeID$" />
+			<condition name="relateIDs" operator="like" expression="%$q_relateIDs$%" />
+		</queryDataList>
+		
+		<queryDataList name="refund_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="refundID" operator="=" expression="$q_refundID$" />
+			<condition name="mobile" operator="like" expression="%$q_mobile$%" />
+			<condition name="email" operator="like" expression="%$q_email$%" />
+			<condition name="shopOrderID" operator="=" expression="$q_shopOrderID$" />
+			<condition name="status" operator="=" expression="$q_status$" />
+			<condition name="refundTypeID" operator="=" expression="$q_refundTypeID$" />
+			<condition name="supplierID" operator="=" expression="$q_supplierID$" />
+		</queryDataList>
+		
+		<queryDataList name="returnGoods_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="returnGoodsID" operator="=" expression="$q_returnGoodsID$" />
+			<condition name="mobile" operator="like" expression="%$q_mobile$%" />
+			<condition name="email" operator="like" expression="%$q_email$%" />
+			<condition name="shopOrderID" operator="=" expression="$q_shopOrderID$" />
+			<condition name="status" operator="=" expression="$q_status$" />
+			<condition name="supplierID" operator="=" expression="$q_supplierID$" />
+		</queryDataList>
+		
+		<queryDataList name="promotionActive_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="name" operator="like" expression="%$q_name$%" />
+			<condition name="promotionActiveID" operator="=" expression="$q_promotionActiveID$" />
+			<condition name="promotionActiveTypeID" operator="=" expression="$q_promotionActiveTypeID$" />
+			<condition name="supplierID" operator="=" expression="$q_supplierID$" />
+			<condition name="supplierName" operator="like" expression="%$q_supplierName$%" />
+		</queryDataList>
+		
+		<queryDataList name="card_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="cardID" operator="=" expression="$q_cardID$" />
+			<condition name="title" operator="like" expression="%$q_title$%" />
+			<condition name="code" operator="=" expression="$q_code$" />
+		</queryDataList>
+		
+		<queryDataList name="banner_V" conditionRelation="and" pageNumber="10" isQueryWithNoCondition="true">
+			<condition name="bannerID" operator="=" expression="$q_bannerID$" />
+			<condition name="bannerGroupID" operator="=" expression="$q_bannerGroupID$" />
+			<condition name="title" operator="like" expression="%$q_title$%" />
+		</queryDataList>
+		
+		<queryDataList name="groupBuy_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="productID" operator="=" expression="$q_productID$" />
+			<condition name="groupBuyTypeID" operator="=" expression="$q_groupBuyTypeID$" />
+			<condition name="productName" operator="like" expression="%$q_productName$%" />
+			<condition name="deletedFlag" operator="=" expression="$q_deletedFlag$" />
+			<condition name="status" operator="=" expression="$q_status$" />
+			<condition name="supplierID" operator="=" expression="$q_supplierID$" />
+			<condition name="supplierName" operator="like" expression="%$q_supplierName$%" />			
+		</queryDataList>
+		
+		<queryDataList name="discountLog_v" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="supplierName" operator="like" expression="$suppName$" />
+		</queryDataList>
+		
+		<queryDataList name="activityPage" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="name" operator="like" expression="%$q_name$%" />
+		</queryDataList>
+		
+		<queryDataList name="info_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="infoID" operator="=" expression="$q_infoID$" />
+			<condition name="infoTypeID" operator="=" expression="$q_infoTypeID$" />
+			<condition name="title" operator="like" expression="%$q_title$%" />
+			<condition name="supplierID" operator="=" expression="$q_supplierID$" />
+			<condition name="supplierName" operator="like" expression="%$q_supplierName$%" />
+			<condition name="auditStatus" operator="=" expression="$q_auditStatus$" />
+			<condition name="validFlag" operator="=" expression="$q_validFlag$" />
+			<condition name="deletedFlag" operator="=" expression="$q_deletedFlag$" />
+		</queryDataList>
+		
+		<queryDataList name="sku_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="skuID" operator="=" expression="$q_skuID$" />
+			<condition name="productID" operator="=" expression="$q_productID$" />
+			<condition name="name" operator="like" expression="%$q_name$%" />
+			<condition name="brandID" operator="=" expression="$q_brandID$" />
+			<condition name="deletedFlag" operator="=" expression="$q_deletedFlag$" />
+			<condition name="bigTypeID" operator="=" expression="$q_bigTypeID$" />
+			<condition name="smallTypeID" operator="=" expression="$q_smallTypeID$" />
+			<condition name="tinyTypeID" operator="=" expression="$q_tinyTypeID$" />
+		</queryDataList>
+		
+		<queryDataList name="stockInBill" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="stockInBillID" operator="=" expression="$q_stockInBillID$" />
+			<condition name="stockInTypeID" operator="=" expression="$q_stockInTypeID$" />
+			<condition name="relateID" operator="=" expression="$q_relateID$" />
+			<condition name="siteManagerUserName" operator="like" expression="%$q_siteManagerUserName$%" />
+			<condition name="addTime" operator="&gt;=" expression="$q_fromAddTime$" />
+			<condition name="addTime" operator="&lt;=" expression="$q_toAddTime$" />
+		</queryDataList>
+		
+		<queryDataList name="stockOutBill" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="stockOutBillID" operator="=" expression="$q_stockOutBillID$" />
+			<condition name="stockOutTypeID" operator="=" expression="$q_stockOutTypeID$" />
+			<condition name="relateID" operator="=" expression="$q_relateID$" />
+			<condition name="siteManagerUserName" operator="like" expression="%$q_siteManagerUserName$%" />
+			<condition name="addTime" operator="&gt;=" expression="$q_fromAddTime$" />
+			<condition name="addTime" operator="&lt;=" expression="$q_toAddTime$" />
+		</queryDataList>
+		
+		<queryDataList name="comment_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="nick" operator="=" expression="$q_nick$" />
+			<condition name="commentID" operator="=" expression="$q_commentID$" />
+			<condition name="productName" operator="like" expression="%$q_productName$%" />
+			<condition name="replyFlag" operator="=" expression="$q_replyFlag$" />
+		</queryDataList>
+		
+		<queryDataList name="consultation_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="nick" operator="=" expression="$q_nick$" />
+			<condition name="consultationID" operator="=" expression="$q_consultationID$" />
+			<condition name="consultationTypeID" operator="=" expression="$q_consultationTypeID$" />
+			<condition name="productName" operator="like" expression="%$q_productName$%" />
+			<condition name="replyFlag" operator="=" expression="$q_replyFlag$" />
+		</queryDataList>
+		
+		<queryDataList name="supplier" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="status" operator="=" expression="$q_status$" />
+			<condition name="name" operator="like" expression="%$q_name$%" />
+			<condition name="mobile" operator="like" expression="%$q_mobile$%" />
+			<condition name="email" operator="like" expression="%$q_email$%" />
+			<condition name="normalFlag" operator="=" expression="$q_normalFlag$" />
+			<condition name="auditFlag" operator="=" expression="$q_auditFlag$" />
+			<condition name="deletedFlag" operator="=" expression="$q_deletedFlag$" />
+			<condition name="supplierID" operator="=" expression="$q_supplierID$" />
+			<condition name="excellentFlag" operator="=" expression="$q_excellentFlag$" />
+			<condition name="supplierTypeID" operator="=" expression="$q_supplierTypeID$" />
+			<condition name="supplierLevelID" operator="=" expression="$q_supplierLevelID$" />
+			<condition name="totalScore" operator="=" expression="$q_totalScore$" />
+			<condition name="commentScore" operator="=" expression="$q_commentScore$" />
+			<condition name="serviceScore" operator="=" expression="$q_serviceScore$" />
+			<condition name="deliveryScore" operator="=" expression="$q_deliveryScore$" />
+		</queryDataList>
+		
+		<queryDataList name="supplierCash_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="supplierCashID" operator="=" expression="$q_supplierCashID$" />
+			<condition name="supplierName" operator="like" expression="%$q_supplierName$%" />
+			<condition name="status" operator="=" expression="$q_status$" />
+		</queryDataList>
+		
+		<queryDataList name="brand" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="brandID" operator="=" expression="$q_brandID$" />
+			<condition name="brandTypeID" operator="=" expression="$q_brandTypeID$" />
+			<condition name="name" operator="like" expression="%$q_name$%" />
+			<condition name="validFlag" operator="=" expression="$q_validFlag$" />
+		</queryDataList>
+		
+		<queryDataList name="floor" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="name" operator="like" expression="%$q_name$%" />
+			<condition name="validFlag" operator="=" expression="$q_validFlag$" />
+			<condition name="deletedFlag" operator="=" expression="$q_deletedFlag$" />
+		</queryDataList>
+		
+		<queryDataList name="purchase" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="supplierID" operator="=" expression="$q_supplierID$" />
+			<condition name="purchaseID" operator="=" expression="$q_purchaseID$" />
+			<condition name="title" operator="like" expression="%$q_title$%" />
+			<condition name="purType" operator="=" expression="$q_purType$" />
+			<condition name="productName" operator="like" expression="%$q_productName$%" />
+			<condition name="addTime" operator="&gt;=" expression="$q_fromAddTime$" />
+			<condition name="addTime" operator="&lt;=" expression="$q_toAddTime$" />
+			<condition name="auditStatus" operator="=" expression="$q_auditStatus$" />
+			<condition name="deletedFlag" operator="=" expression="$q_deletedFlag$" />
+		</queryDataList>
+		
+		<queryDataList name="quote" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="purchaseID" operator="=" expression="$purchaseID$" />
+			<condition name="deletedFlag" operator="=" expression="$deletedFlag$" />
+		</queryDataList>
+		
+		<queryDataList name="questionFeedBackLog" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="questionFeedBackLogID" operator="=" expression="$q_questionFeedBackLogID$" />
+			<condition name="deletedFlag" operator="=" expression="$q_deletedFlag$" />
+		</queryDataList>
+		
+		<queryDataList name="systemUserLog" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="systemUserLog" operator="=" expression="$q_systemUserLog$" />
+		</queryDataList>
+		
+		<queryDataList name="friendshipLink" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="friendshipLinkID" operator="=" expression="$q_friendshipLinkID$" />
+			<condition name="name" operator="like" expression="%$q_name$%" />
+		</queryDataList>
+		
+		<queryDataList name="shopUser_V" conditionRelation="and" pageNumber="20" isQueryWithNoCondition="true">
+			<condition name="shopUserID" operator="=" expression="$q_shopUserID$" />
+			<condition name="validFlag" operator="=" expression="$q_validFlag$" />
+			<condition name="memberFlag" operator="=" expression="$q_memberFlag$" />
+			<condition name="shopDeletedFlag" operator="=" expression="$q_shopDeletedFlag$" />
+			<condition name="email" operator="like" expression="%$q_email$%" />
+			<condition name="mobile" operator="like" expression="%$q_mobile$%" />
+			<condition name="nick" operator="like" expression="%$q_nick$%" />
+			<condition name="name" operator="like" expression="%$q_name$%" />
+		</queryDataList>
+	</queryDataLists>
+</application>

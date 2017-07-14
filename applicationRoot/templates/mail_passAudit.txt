@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>$siteName$网站开通申请审核通过</title>
+<style type="text/css">
+* { margin:0; padding:0;}
+body {
+	font-size: 12px;
+	line-height: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+.red {
+	color: red
+}
+
+.span {
+	background-color: #00FF00
+}
+
+.main { width:750px; margin:0 auto;}
+.logo { width:100%; height:48px; margin:25px 0 10px 0;}
+.content { width:744px; border:3px #ddd solid; padding:15px;}
+</style>
+</head>
+<body>
+	<div class="main">
+	    <div class="logo">
+			<span style="float:left"><img src="$logoSrc$" width="120px" /></span>
+		</div>	
+		<div class="content mt30">
+			<div>
+			<span style="color:#C00">$siteName$</span>的管理员 您好,<br/>
+			您的网站$siteName$开通申请已通过审核,您现在可以登陆<span style="color:#C00"><a href='$consoleLink$' target='_blank'>$consoleLink$</a></span>进行网站管理.<br/>
+			独站宝和您一同成长，感谢您的关爱！<br/>
+			此邮件为系统自动发放，请勿直接回复!<br/>
+			客服电话：$servicePhone$<br/>
+			祝好!<br/>
+			</div>
+			<div style="text-align:right;margin-top: 10px;">
+				独站宝服务中心敬上	<br/>$date$
+			</div>			
+		</div>
+
+	</div>
+</body>
+</html>
